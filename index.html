@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" htrf="styles/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #177cc2;
+            font-size: 40px;
+            padding: 20px;
+            color: white;
+        }
+
+        .item1 {
+            grid-area: myAr1;
+        }
+
+        .item2 {
+            grid-area: myAr2;
+        }
+
+        .item3 {
+            grid-area: myAr3;
+        }
+
+        .item4 {
+            grid-area: myAr4;
+        }
+
+        .item5 {
+            grid-area: myAr5;
+        }
+
+        .item6 {
+            grid-area: myAr6;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 'myAr1 myAr2 myAr3'
+                'myAr4 myAr5 myAr6';
+            justify-content: center;
+            column-gap: 30px;
+            background-color: #e4e4e4;
+
+        }
+
+        .grid-container>div {
+            box-shadow: 0px -1px 10px 7px #c4c4c4;
+        }
+
+        .item1,
+        .item2,
+        .item3 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .item4,
+        .item5,
+        .item6 {
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        p {
+            text-align: left;
+            padding: 20px;
+            font-size: 30px;
+            background-color: #ffffff;
+        }
+
+        @media screen and (max-width: 500px) {
+            .grid-container {
+                grid-template-areas: 'myAr1'
+                    'myAr2'
+                    'myAr3'
+                    'myAr4'
+                    'myAr5'
+                    'myAr6';
+
+                column-gap: 0px;
+                justify-content: space-around;
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h3>European Capitals</h3>
+    </header>
+    <div class="grid-container">
+        <div class="item1">
+            <img src="images/athens.jpg" alt="Atėnai">
+            <p>Athens</p>
+        </div>
+        <div class="item2">
+            <img src="images/berlin.jpg" alt="Berlynas">
+            <p>Berlin</p>
+        </div>
+        <div class="item3">
+            <img src="images/london.jpg" alt="Londonas">
+            <p>London</p>
+        </div>
+        <div class="item4">
+            <img src="images/madrid.jpg" alt="Madridas">
+            <p>Madrid</p>
+
+        </div>
+        <div class="item5">
+            <img src="images/paris.jpg" alt="Paryžius">
+            <p>Paris</p>
+        </div>
+        <div class="item6">
+            <img src="images/rome.jpg" alt="Roma">
+            <p>Rome</p>
+        </div>
+    </div>
+</body>
+
+</html>
